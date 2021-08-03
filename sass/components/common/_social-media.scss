@@ -1,9 +1,6 @@
 .social-media {
   @include centredFlex();
 
-  padding-right: 32px;
-  padding-left: 32px;
-
   &--footer {
     padding: 0;
   }
