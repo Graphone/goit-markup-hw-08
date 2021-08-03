@@ -6,13 +6,17 @@
 }
 
 .footer__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  text-align: center;
   display: flex;
-  align-items: baseline;
+  // align-items: baseline;
+  @media screen and (min-width: 768px) {
+  }
 }
+
+// .footer__container {
+//   display: flex;
+//   align-items: baseline;
+// }
 
 .footer__logo {
   display: block;
@@ -22,8 +26,12 @@
 }
 
 .footer__sm-wrapper {
-  margin-left: 70px;
+  margin-top: 60px;
 }
+
+// .footer__sm-wrapper {
+//   margin-left: 70px;
+// }
 
 .footer__sm-title {
   margin-bottom: 20px;

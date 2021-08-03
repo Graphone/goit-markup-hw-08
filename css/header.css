@@ -1,0 +1,14 @@
+.page-header {
+  background: #ffffff;
+}
+
+.page-header--line {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=header.css.map */

@@ -2,7 +2,9 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: solid 1px red;
+  .page-header__container {
+    display: flex;
+  }
 
   @media screen and (min-width: 480px) {
     & {
@@ -10,16 +12,16 @@
       margin: 0 auto;
     }
   }
-}
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 768px;
+    }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 1200px;
+    }
   }
 }

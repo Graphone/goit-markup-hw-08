@@ -1,11 +1,16 @@
 .logo {
   font-family: $accentFont;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.2;
   color: $fontColor;
   word-spacing: -0.4ch;
 
   &--white {
     color: $whiteColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
   }
 }
 
