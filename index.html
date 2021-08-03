@@ -13,15 +13,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css"
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <!-- Project Body -->
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="container header__container">
-        <!-- Navigation -->
-        <nav class="site-nav">
+    <!-- <header class="page-header">
+      <div class="container page-header__container"> -->
+    <!-- Navigation -->
+    <!-- <nav class="site-nav">
           <a href="index.html" class="logo">
             <span class="logo__item">
               Web
@@ -59,22 +59,24 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!-- Main Content -->
     <main>
       <!-- Hero Section -->
-      <section class="section">
+      <!-- <section class="hero">
         <div class="container">
-          <h1 class="section_title">
+          <h1 class="hero__title">
             Эффективные решения
             <br />
             для вашего бизнеса
           </h1>
-          <button data-modal-open type="button" class="buy-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="hero__button">
+            Заказать услугу
+          </button>
         </div>
-      </section>
+      </section> -->
       <!-- Feature Section -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <ul class="feature-list">
             <li class="feature-list__item">
@@ -127,20 +129,19 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- About Section -->
-      <section class="section">
+      <!-- <section class="about-section">
         <div class="container">
-          <h2 class="section_title">Чем мы занимаемся</h2>
+          <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="about-list">
-
             <li class="about-list__item">
               <div class="about-list__thumb">
                 <img
-                src="./images/about01.jpg"
-                alt="Десктопные приложения"
-                height="294"
-                width="370"
+                  src="./images/image01.jpg"
+                  alt="Десктопные приложения"
+                  height="294"
+                  width="370"
                 />
                 <div class="about-list__text-wrapper">
                   <p class="about-list__text-position">Десктопные приложения</p>
@@ -151,10 +152,10 @@
             <li class="about-list__item">
               <div class="about-list__thumb">
                 <img
-                src="./images/about02.jpg"
-                alt="Мобильные приложения"
-                height="294"
-                width="370"
+                  src="./images/image02.jpg"
+                  alt="Мобильные приложения"
+                  height="294"
+                  width="370"
                 />
                 <div class="about-list__text-wrapper">
                   <p class="about-list__text-position">Мобильные приложения</p>
@@ -165,39 +166,87 @@
             <li class="about-list__item">
               <div class="about-list__thumb">
                 <img
-                src="./images/about03.jpg"
-                alt="Дизайнерские решения"
-                height="294"
-                width="370"
+                  src="./images/image03.jpg"
+                  alt="Дизайнерские решения"
+                  height="294"
+                  width="370"
                 />
                 <div class="about-list__text-wrapper">
                   <p class="about-list__text-position">Дизайнерские решения</p>
                 </div>
               </div>
             </li>
-
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Team Section -->
-      <section class="section--centered">
+      <section class="team section--centered">
         <div class="container">
-          <h2 class="section_title">Наша команда</h2>
-          <!-- Team Card Set -->
+          <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
-            <!-- Team member one -->
             <li class="team-list__item">
-              <img
-                class="team-list__card-image"
-                src="./images/team01.jpg"
-                alt="Product Designer"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1-desktop.webp    1x,
+                    ./images/team/team-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1-desktop.jpg    1x,
+                    ./images/team/team-1-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1-tablet.webp    1x,
+                    ./images/team/team-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1-tablet.jpg    1x,
+                    ./images/team/team-1-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-1-mobile.webp    1x,
+                    ./images/team/team-1-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-1-mobile.jpg    1x,
+                    ./images/team/team-1-mobile@2x.jpg max
+                  "
+                />
+
+                <img
+                  class="team-list__card-image"
+                  src="./images/team/team-1-mobile"
+                  alt="Product Designer"
+                  height="260"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-list__wrapper">
                 <h3 class="team-list__title-name">Игорь Демьяненко</h3>
                 <p class="team-list__profession">Product Designer</p>
-                <!-- Social Media -->
+
                 <ul class="social-media">
                   <li class="social-media__item">
                     <a class="social-media__link" href="">
@@ -230,22 +279,76 @@
                 </ul>
               </div>
             </li>
-            <!-- Team member two -->
+
             <li class="team-list__item">
-              <img
-                class="team-list__card-image"
-                src="./images/team02.jpg"
-                alt="Product Designer"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2-desktop.webp    1x,
+                    ./images/team/team-2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2-desktop.jpg    1x,
+                    ./images/team/team-2-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2-tablet.webp    1x,
+                    ./images/team/team-2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2-tablet.jpg    1x,
+                    ./images/team/team-2-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-2-mobile.webp    1x,
+                    ./images/team/team-2-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-2-mobile.jpg    1x,
+                    ./images/team/team-2-mobile@2x.jpg max
+                  "
+                />
+
+                <img
+                  class="team-list__card-image"
+                  src="./images/team/team-2-mobile"
+                  alt="Product Designer"
+                  height="260"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-list__wrapper">
                 <h3 class="team-list__title-name">Ольга Репина</h3>
                 <p class="team-list__profession">Frontend Developer</p>
-                <!-- Social Media -->
+
                 <ul class="social-media">
                   <li class="social-media__item">
-                    <a class="social-media__link social-media__link--team-sm" href="">
+                    <a
+                      class="social-media__link social-media__link--team-sm"
+                      href=""
+                    >
                       <svg class="social-media__icon">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -275,22 +378,76 @@
                 </ul>
               </div>
             </li>
-            <!-- Team member three -->
+
             <li class="team-list__item">
-              <img
-                class="team-list__card-image"
-                src="./images/team03.jpg"
-                alt="Product Designer"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3-desktop.webp    1x,
+                    ./images/team/team-3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3-desktop.jpg    1x,
+                    ./images/team/team-3-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3-tablet.webp    1x,
+                    ./images/team/team-3-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3-tablet.jpg    1x,
+                    ./images/team/team-3-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-3-mobile.webp    1x,
+                    ./images/team/team-3-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-3-mobile.jpg    1x,
+                    ./images/team/team-3-mobile@2x.jpg max
+                  "
+                />
+
+                <img
+                  class="team-list__card-image"
+                  src="./images/team/team-3-mobile"
+                  alt="Product Designer"
+                  height="260"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-list__wrapper">
                 <h3 class="team-list__title-name">Николай Тарасов</h3>
                 <p class="team-list__profession">Marketing</p>
-                <!-- Social Media -->
+
                 <ul class="social-media">
                   <li class="social-media__item">
-                    <a class="social-media__link social-media__link--team-sm" href="">
+                    <a
+                      class="social-media__link social-media__link--team-sm"
+                      href=""
+                    >
                       <svg class="social-media__icon">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -320,22 +477,76 @@
                 </ul>
               </div>
             </li>
-            <!-- Team member four -->
+
             <li class="team-list__item">
-              <img
-                class="team-list__card-image"
-                src="./images/team04.jpg"
-                alt="Product Designer"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4-desktop.webp    1x,
+                    ./images/team/team-4-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4-desktop.jpg    1x,
+                    ./images/team/team-4-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4-tablet.webp    1x,
+                    ./images/team/team-4-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4-tablet.jpg    1x,
+                    ./images/team/team-4-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-4-mobile.webp    1x,
+                    ./images/team/team-4-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-4-mobile.jpg    1x,
+                    ./images/team/team-4-mobile@2x.jpg max
+                  "
+                />
+
+                <img
+                  class="team-list__card-image"
+                  src="./images/team/team-4-mobile"
+                  alt="Product Designer"
+                  height="260"
+                  width="270"
+                />
+              </picture>
+              2
               <div class="team-list__wrapper">
                 <h3 class="team-list__title-name">Михаил Ермаков</h3>
                 <p class="team-list__profession">UI Designer</p>
-                <!-- Social Media -->
+
                 <ul class="social-media">
                   <li class="social-media__item">
-                    <a class="social-media__link social-media__link--team-sm" href="">
+                    <a
+                      class="social-media__link social-media__link--team-sm"
+                      href=""
+                    >
                       <svg class="social-media__icon">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -369,58 +580,58 @@
         </div>
       </section>
       <!-- Clients section -->
-      <section class="section">
+      <!-- <section class="clients-section">
         <div class="container">
-          <h2 class="section_title">Постоянные клиенты</h2>
-          <ul class="client-list">
-            <li class="client-list__item">
-              <a href="" class="client-list__link">
-                <svg class="client-list__logo">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="clients-list">
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link">
+                <svg class="clients-list__logo">
                   <use href="./images/sprite.svg#client-logo-a"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item">
-              <a href="" class="client-list__link">
-                <svg class="client-list__logo">
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link">
+                <svg class="clients-list__logo">
                   <use href="./images/sprite.svg#client-logo-b"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item">
-              <a href="" class="client-list__link">
-                <svg class="client-list__logo">
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link">
+                <svg class="clients-list__logo">
                   <use href="./images/sprite.svg#client-logo-c"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item">
-              <a href="" class="client-list__link">
-                <svg class="client-list__logo">
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link">
+                <svg class="clients-list__logo">
                   <use href="./images/sprite.svg#client-logo-d"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item">
-              <a href="" class="client-list__link">
-                <svg class="client-list__logo">
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link">
+                <svg class="clients-list__logo">
                   <use href="./images/sprite.svg#client-logo-e"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item">
-              <a href="" class="client-list__link">
-                <svg class="client-list__logo">
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link">
+                <svg class="clients-list__logo">
                   <use href="./images/sprite.svg#client-logo-f"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div>
           <a href="index.html" class="logo footer__logo">
@@ -429,7 +640,7 @@
             </span>
             Studio
           </a>
-          <!-- Address -->
+
           <address class="address">
             <div>
               <ul class="address__list">
@@ -449,7 +660,7 @@
               </ul>
             </div>
         </div>
-          <!--Social Media  -->
+
           <div class="footer__sm-wrapper">
             <p class="footer__sm-title">Присоединяйтесь</p>
             <ul class="social-media social-media--footer">
@@ -483,9 +694,9 @@
               </li>
             </ul>
           </div>
-        </address>
-        <!-- Follow -->
-        <div class="subscribe">
+        </address> -->
+
+    <!-- <div class="subscribe">
           <p class="subscribe__text">Подпишитесь на рассылку</p>
           <form class="subscribe__form" name="subscribe-form" autocomplete="on">
             <label class="subscribe__label">
@@ -499,10 +710,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Backdrop -->
-    <div data-modal class="backdrop backdrop--is-hidden">
-      <!-- Modal Window -->
+    <!-- <div data-modal class="backdrop backdrop--is-hidden">
+
       <div class="modal">
         <div class="modal__container">
           <b class="modal__text">Оставьте свои данные, мы вам перезвоним</b>
@@ -554,8 +765,8 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- JavaScript -->
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
