@@ -1,0 +1,39 @@
+.feature-list {
+  @extend %list;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  &__item {
+    width: 270px;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &__icon-wrapper {
+    @include centredFlex;
+
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $secondaryBgColor;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: $fontColor;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

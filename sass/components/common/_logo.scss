@@ -1,0 +1,14 @@
+.logo {
+  font-family: $accentFont;
+  font-size: 26px;
+  color: $fontColor;
+  word-spacing: -0.4ch;
+
+  &--white {
+    color: $whiteColor;
+  }
+}
+
+.logo__item {
+  color: $accentColor;
+}
