@@ -1,6 +1,12 @@
-// .subscribe {
-//   margin-left: 93px;
-// }
+.subscribe {
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
 
 .subscribe__text {
   margin-top: 60px;
@@ -13,14 +19,19 @@
   text-transform: uppercase;
 
   color: $whiteColor;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: unset;
+  }
 }
 
-// .subscribe__form {
-//   display: flex;
-// }
+.subscribe__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .subscribe__input {
-  // margin-right: 12px;
   margin-bottom: 20px;
   padding: 16px 15px 16px 15px;
   width: 100%;
@@ -32,6 +43,10 @@
   border-radius: 4px;
   background-color: $bgColor;
   color: $whiteColor;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
 }
 
 .subscribe__button {
@@ -50,6 +65,10 @@
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__icon {

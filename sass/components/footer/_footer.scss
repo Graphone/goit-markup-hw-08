@@ -7,9 +7,26 @@
 
 .footer__container {
   text-align: center;
-  display: flex;
   // align-items: baseline;
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: initial;
+  }
+}
+
+.footer-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: initial;
   }
 }
 
@@ -27,11 +44,17 @@
 
 .footer__sm-wrapper {
   margin-top: 60px;
-}
 
-// .footer__sm-wrapper {
-//   margin-left: 70px;
-// }
+  @media screen and (min-width: 768px) {
+    margin-top: unset;
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: unset;
+    margin-left: 70px;
+  }
+}
 
 .footer__sm-title {
   margin-bottom: 20px;
