@@ -2,8 +2,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+
+  min-width: 450px;
+  min-height: 609px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 
   background-color: $whiteColor;
   border-radius: 4px;
