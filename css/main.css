@@ -499,14 +499,15 @@ a {
 
 .mobile-menu__container {
   position: relative;
-  padding: 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 48px 40px;
 }
 
 .mobile-menu__list {
-  margin-bottom: 302px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -542,6 +543,13 @@ a {
 
 .mobile-menu__social-list {
   display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 420px) {
+  .mobile-menu__social-list {
+    flex-wrap: wrap;
+  }
 }
 
 .mobile-menu__social-item {
@@ -568,10 +576,13 @@ a {
   transform: rotate(90deg);
 }
 
-.mobile-menu__close-icon {
+.mobile-menu__close-btn {
   position: absolute;
   top: 20px;
   right: 15px;
+}
+
+.mobile-menu__close-icon {
   width: 40px;
   height: 40px;
   display: block;
