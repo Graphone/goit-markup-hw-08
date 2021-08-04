@@ -28,9 +28,12 @@
   padding: 40px;
 }
 
+.modal__text-wrapper {
+  min-height: 60px;
+}
+
 .modal__text {
-  display: block;
-  margin-bottom: 30px;
+  display: inline;
 
   color: $fontColor;
   font-weight: 700;
@@ -38,4 +41,9 @@
   line-height: 1.15px;
   text-align: center;
   letter-spacing: 0.03em;
+
+  &--centred {
+    display: block;
+    text-align: center;
+  }
 }

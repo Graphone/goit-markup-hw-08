@@ -21,7 +21,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $whiteColor;
-  z-index: 111;
+  z-index: 999;
 
   overflow: auto;
 
@@ -44,18 +44,17 @@
 .mobile-menu__container {
   position: relative;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu__list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   margin-bottom: 302px;
 
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.02em;
 
   color: $fontColor;
@@ -71,7 +70,7 @@
   }
 }
 
-.menu-contacts {
+.mobile-menu__contacts {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -79,14 +78,14 @@
   margin-bottom: 64px;
 }
 
-.menu-contacts__tel {
+.mobile-menu__tel {
   margin-bottom: 32px;
 
   font-size: 34px;
   color: $accentColor;
 }
 
-.menu-contacts__email {
+.mobile-menu__email {
   font-size: 24px;
   color: $altFontColor;
 }
