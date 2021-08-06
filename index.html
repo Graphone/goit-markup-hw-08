@@ -782,13 +782,13 @@
     <!-- Backdrop -->
     <div data-modal class="backdrop backdrop--is-hidden">
       <div class="modal">
-        <div class="modal__container">
-          <span class="modal__heading">
-            <p class="modal__text">Оставьте свои данные, мы вам 
-              <span class="modal__text modal__text--centred">перезвоним</span>
-            </p>
-          </span>
+        <button class="close-button" data-modal-close type="button">
+          <svg class="close-svg" height="18px" width="18px">
+            <use href="./images/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
           <form class="modal-form" name="request-form">
+            <p class="modal-form__heading">Оставьте свои данные, мы вам перезвоним</p>
             <label class="modal-form__label">
               <span class="modal-form__label-text">
                 Имя
@@ -833,18 +833,12 @@
               />
               <span class="modal-form__checkbox-icon"></span>
               Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-link" href="">Условия договора</a>
+              <a class="modal-form__agreement-link" href="">Условия договора</a>
             </label>
             <button class="modal-button" type="submit">
               <span class="modal-button__text">Отправить</span>
             </button>
           </form>
-          <button class="close-button" data-modal-close type="button">
-            <svg class="close-svg" height="18px" width="18px">
-              <use href="./images/sprite.svg#close-icon"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
     <!-- JavaScript -->

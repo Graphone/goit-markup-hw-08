@@ -592,7 +592,13 @@ a {
 .site-nav {
   display: flex;
   align-items: center;
-  min-height: 80px;
+  min-height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    min-height: 80px;
+  }
 }
 
 .site-nav__list {
@@ -1441,8 +1447,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 450px;
-  min-height: 609px;
+  padding: 40px;
+  min-width: 95vw;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1450,7 +1456,20 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     min-height: 581px;
@@ -1461,27 +1480,17 @@ a {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.modal__container {
-  padding: 40px;
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
-.modal__text-wrapper {
-  min-height: 60px;
-}
-
-.modal__text {
-  display: inline;
+.modal-form__heading {
   color: #212121;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.modal__text--centred {
-  display: block;
-  text-align: center;
 }
 
 .modal-form__label {
@@ -1510,7 +1519,6 @@ a {
 
 /* Modal Inputs */
 .modal-form__input {
-  display: block;
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
@@ -1561,10 +1569,15 @@ a {
 
 .modal-form__agreement-label {
   position: relative;
-  display: flex;
+  display: inline-block;
   align-items: center;
   margin-bottom: 30px;
   font-size: 14px;
+}
+
+.modal-form__agreement-link {
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 /* Checkbox */
@@ -1601,7 +1614,6 @@ a {
 .modal-form__agreement-link {
   color: #2196f3;
   text-decoration: underline;
-  margin-left: 5px;
 }
 
 /* Submit Button */

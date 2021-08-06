@@ -2,11 +2,22 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
+  min-width: 95vw;
+  // min-height: 75vh;
 
-  min-width: 450px;
-  min-height: 609px;
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    // min-width: 95vw;
+    // min-height: 75vh;
+  }
 
   @media screen and (min-width: 768px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
   }
@@ -21,29 +32,5 @@
 
   .backdrop--is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
-  }
-}
-
-.modal__container {
-  padding: 40px;
-}
-
-.modal__text-wrapper {
-  min-height: 60px;
-}
-
-.modal__text {
-  display: inline;
-
-  color: $fontColor;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  &--centred {
-    display: block;
-    text-align: center;
   }
 }
