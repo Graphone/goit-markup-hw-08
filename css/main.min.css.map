@@ -31,8 +31,7 @@
         "../sass/components/backdrop/_backdrop.scss",
         "../sass/components/backdrop/_modal.scss",
         "../sass/components/backdrop/_modal-form.scss",
-        "../sass/components/backdrop/_modal-checkbox.scss",
-        "../sass/components/backdrop/_modal-buttons.scss"
+        "../sass/components/backdrop/_modal-checkbox.scss"
     ],
     "names": [],
     "file": "main.min.css"
