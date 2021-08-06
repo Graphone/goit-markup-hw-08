@@ -1,0 +1,56 @@
+.modal-form__agreement-label {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.modal-form__agreement-link {
+  color: $accentColor;
+  text-decoration: underline;
+}
+
+/* Checkbox  */
+
+.modal-form__agreement-checkbox {
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none;
+
+  // position: absolute;
+}
+
+.modal-form__agreement-checkbox:checked + .modal-form__checkbox-icon {
+  background-color: $accentColor;
+  background-image: url(../images/checked-icon.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $accentColor;
+}
+
+.modal-form__checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  background-color: $whiteColor;
+  border: 2px solid #2a2a2a;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.modal-form__agreement-checkbox:focus + .modal-form__checkbox-icon {
+  box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+  // outline: 2px solid rgba(33, 150, 243, 0.25);
+}
+
+.modal-form__agreement-link {
+  color: $accentColor;
+  text-decoration: underline;
+}

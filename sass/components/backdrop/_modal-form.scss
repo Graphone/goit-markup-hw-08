@@ -12,7 +12,6 @@
 }
 
 .modal-form__label {
-  position: relative;
   display: block;
 }
 
@@ -25,15 +24,10 @@
   letter-spacing: 0.03em;
 }
 
-/* Modal Icons */
-
-.modal-form__icon {
-  position: absolute;
-  top: 38px;
-  left: 15px;
-  display: inline-block;
-  cursor: pointer;
-  width: 25px;
+.modal-form__input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
 }
 
 /* Modal Inputs */
@@ -41,22 +35,33 @@
 .modal-form__input {
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-}
 
-.modal-form__input:focus + .modal-form__icon {
-  fill: $accentColor;
-  transition: fill 250ms $timingFunction;
+  transition: border 250ms $timingFunction;
 }
 
 .modal-form__input:focus {
   outline: none;
   border: 1px solid $accentColor;
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  display: inline-block;
+  cursor: pointer;
+  width: 25px;
+}
+
+.modal-form__input:focus + .modal-form__icon {
+  fill: $accentColor;
+  transition: fill 250ms $timingFunction;
 }
 
 .modal-form__comment-text {
@@ -80,6 +85,8 @@
   border-radius: 4px;
   resize: none;
 
+  transition: border 250ms $timingFunction;
+
   &:focus {
     outline: none;
     border: 1px solid $accentColor;
@@ -88,57 +95,4 @@
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
-}
-
-.modal-form__agreement-label {
-  position: relative;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 30px;
-
-  font-size: 14px;
-}
-
-.modal-form__agreement-link {
-  color: $accentColor;
-  text-decoration: underline;
-}
-
-/* Checkbox */
-
-.modal-form__agreement-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  position: absolute;
-}
-
-.modal-form__agreement-checkbox:checked + .modal-form__checkbox-icon {
-  background-color: $accentColor;
-  background-image: url(../images/checked-icon.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $accentColor;
-}
-
-.modal-form__checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-
-  background-color: $whiteColor;
-  border: 2px solid #2a2a2a;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.modal-form__agreement-checkbox:focus + .modal-form__checkbox-icon {
-  box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
-}
-
-.modal-form__agreement-link {
-  color: $accentColor;
-  text-decoration: underline;
 }
