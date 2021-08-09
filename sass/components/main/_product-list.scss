@@ -63,6 +63,7 @@
   display: inline-block;
   width: 100%;
   height: 100%;
+
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
@@ -80,13 +81,23 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 322px;
+  width: 100%;
+  padding: 77px 24px;
 
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $whiteColor;
+
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .product-list__card {

@@ -1,12 +1,16 @@
 .modal-form__agreement-label {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 11px;
+  width: 100%;
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 

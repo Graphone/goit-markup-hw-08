@@ -48,12 +48,13 @@
   background-color: $whiteColor;
   cursor: pointer;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover .close-svg,
   &:focus .close-svg {
     fill: $accentColor;
   }
+}
+.close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
